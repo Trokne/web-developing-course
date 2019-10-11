@@ -27,4 +27,4 @@
 
 [Data](./test_data.json)
 
-![Result](./fulter_run.png)
+![Result](./filter_run.png)
