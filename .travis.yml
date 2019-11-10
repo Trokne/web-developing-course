@@ -1,0 +1,21 @@
+# safelist
+branches:
+  only:
+  - master
+  - develop
+
+language: node_js
+node_js:
+  - "8.2.1"
+
+install:
+  - npm install newman
+
+before_script:
+  - node --version
+  - npm --version
+  - node_modules/.bin/newman --version
+
+script:
+  - node_modules/.bin/newman run Module_1/Task_2/3/CollectionFilter.postman_collection.json -r -d Module_1/Task_2/3/test_data.json -n 7
+  - node_modules/.bin/newman run Module_1/Task_2/3/CRUD.postman_collection.json -r
