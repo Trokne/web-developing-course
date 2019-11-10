@@ -10,7 +10,7 @@
       <td>{{date_due}}</td>
       <td>{{comment}}</td>
       <td class="center">
-        <a class="btn purple" href="./edit.html?id={{id}}">
+        <a class="btn grey" href="./edit.html?id={{id}}">
           <i class="material-icons">edit</i>
         </a>
         <button class="btn red" data-id={{id}}>
